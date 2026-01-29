@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Snake Game Remade</title>
+    <script src="JS/app.js" defer></script>
+</head>
+<body>
+    <span class="score">your score = <span id="scoreSet"></span></span>
+    <div class="inputs">
+        <input min="10" onchange="adjustGroundX()" class="input" max="75" type="number" name="" id="ground-x" placeholder="حداکثر حرکت به چپ و راست">
+        <input min="10" onchange="adjustGroundY()" class="input" max="23" type="number" name="" id="ground-y" placeholder="حداکثر حرکت به بالا و پایین">
+    </div>
+    <div class="container">
+        <span class="snake" id="snake" style="top: 0px;left: 0px;">*</span>
+        <div class="apples">
+        <span class="apple" id="apple" style="top: 40px;left: 40px;">$</span>
+
+        </div>
+    </div>
+    <div class="buttons-container">
+        <button class="buttons button-up" onclick="goUp()"><img src="IMG/icons8_sort_up_512px.png" alt="go up btn">w</button>
+        <button class="buttons button-left" onclick="goLeft()">a<img src="IMG/icons8_sort_left_512px.png" alt="go left btn"></button>
+        <button class="buttons button-right" onclick="goRight()"><img src="IMG/icons8_sort_right_512px.png" alt="go right btn">d</button>
+        <button class="buttons button-down" onclick="goDown()"><img src="IMG/icons8_sort_down_512px.png" alt="go down btn">s</button>
+    </div>
+</body>
+</html>
